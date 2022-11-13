@@ -14,7 +14,7 @@ echo "$line_separator"
 echo "$gen_msg"
 touch pastedCode.c
 cat temp1.data > pastedCode.c
-echo -e "\n\tconst char* inputStr = \"$message\";" >> pastedCode.c
+echo -e "\n    const char* inputStr = \"$message\";" >> pastedCode.c
 cat temp2.data >> pastedCode.c
 
 # Trivia fact: -e parameter enables echo command to make the proper interpretation of backslash characters.
