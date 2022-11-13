@@ -16,6 +16,8 @@ cat temp1.data > pastedCode.c
 echo -e "\n\tconst char* inputStr = \"$message\";" >> pastedCode.c
 cat temp2.data >> pastedCode.c
 
+# Trivia fact: -e parameter enables echo command to make the proper interpretation of backslash characters.
+
 echo "$line_separator"
 echo "$compilation_msg"
 gcc pastedCode.c -o pastedCode
