@@ -1,12 +1,13 @@
 #!/bin/bash
 
 line_separator="*****************"
+input_msg="Input the text that is meant to be printed."
 gen_msg="Generating the source file..."
 compilation_msg="Compiling now..."
 Run_msg="Running the program..."
 
 echo "$line_separator"
-echo "Input the text that is meant to be printed."
+echo "$input_msg"
 read message
 
 echo "$line_separator"
